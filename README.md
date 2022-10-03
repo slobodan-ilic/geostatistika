@@ -1,10 +1,14 @@
 # geostatistika
 
+## About
 Code for generating R² graph for OCO-2 SIF vs the CSIF product (Zhange et al).
 
+## Description
 This code is intended as an excercise in partially reproducing the results obtained by
 Zhang et al (2018). The goal of the excercise is to reproduce the R² score reported in
 the paper, for the years 2014 - 2017.
+
+## Operation
 The code operates in the following way:
     1. For a given CSIF file, which covers a specific year, all the available OCO-2
        files are downloaded. The values are then matched by the CSIF grid values of
@@ -19,3 +23,7 @@ The code operates in the following way:
        the de-facto originals, while the graph is "inverted" in the sense that the X
        axis represents the forecasted (generated) CSIF values, while the original OCO-2
        values are represented on the Y-axis.
+
+## How to start
+Start the code by typing ```python sif_r_sq.py``` from console. You'll be prompted to
+install all the necessary packages. Best to use `venv` (at your convenience).
